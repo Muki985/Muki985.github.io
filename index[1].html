@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Newlife Prayer Church Bwebajja — A place of prayer, faith, hope, and transformation.">
+  <title>Newlife Prayer Church Bwebajja</title>
+  <style>
+    :root{
+      --bg:#070b16;
+      --card:rgba(255,255,255,.08);
+      --text:#f7f8fc;
+      --muted:#b8bfd0;
+      --accent:#d7a84d;
+      --accent2:#fff0b5;
+      --line:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:radial-gradient(circle at top,#18264b 0,#070b16 45%,#04060c 100%);
+      color:var(--text);line-height:1.6;overflow-x:hidden
+    }
+    a{text-decoration:none;color:inherit}
+    .nav{
+      position:fixed;top:0;left:0;width:100%;z-index:1000;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 6%;background:rgba(4,7,15,.72);
+      backdrop-filter:blur(18px);border-bottom:1px solid var(--line)
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand img{width:45px;height:45px;object-fit:contain;border-radius:50%}
+    .links{display:flex;gap:26px;align-items:center}
+    .links a{color:#dfe4ef;font-size:14px;transition:.25s}
+    .links a:hover{color:var(--accent)}
+    .menu{display:none;background:none;border:0;color:white;font-size:28px}
+    .hero{
+      min-height:100vh;display:grid;place-items:center;text-align:center;
+      padding:120px 6% 70px;position:relative
+    }
+    .hero:before{
+      content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+      background:rgba(215,168,77,.12);filter:blur(70px);top:15%;left:50%;
+      transform:translateX(-50%)
+    }
+    .hero-content{position:relative;max-width:900px}
+    .hero-logo{width:170px;height:170px;object-fit:contain;margin-bottom:25px;filter:drop-shadow(0 15px 35px rgba(0,0,0,.45))}
+    h1{font-size:clamp(40px,7vw,82px);line-height:1.02;letter-spacing:-2px}
+    .gold{color:var(--accent)}
+    .tagline{max-width:650px;margin:25px auto;color:var(--muted);font-size:19px}
+    .btn{
+      display:inline-block;padding:14px 24px;border-radius:999px;
+      background:linear-gradient(135deg,var(--accent),#f1d27f);
+      color:#17130a;font-weight:800;margin:8px;box-shadow:0 12px 30px rgba(215,168,77,.2)
+    }
+    .btn.alt{background:transparent;color:white;border:1px solid var(--line);box-shadow:none}
+    section{padding:100px 6%;max-width:1200px;margin:auto}
+    .section-title{text-align:center;font-size:42px;margin-bottom:12px}
+    .section-sub{text-align:center;color:var(--muted);margin-bottom:45px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:24px;
+      padding:30px;backdrop-filter:blur(14px);transition:.3s
+    }
+    .card:hover{transform:translateY(-6px);border-color:rgba(215,168,77,.4)}
+    .card h3{font-size:24px;margin-bottom:10px}
+    .time{color:var(--accent);font-weight:700}
+    .giving{text-align:center}
+    .number{
+      display:inline-block;margin:20px 0;padding:20px 28px;border-radius:18px;
+      border:1px solid rgba(215,168,77,.35);background:rgba(215,168,77,.08);
+      font-size:28px;font-weight:800;color:var(--accent2)
+    }
+    .pastors{grid-template-columns:repeat(3,1fr)}
+    .pastor{text-align:center;overflow:hidden}
+    .pastor img{
+      width:150px;height:150px;border-radius:50%;object-fit:cover;
+      border:3px solid var(--accent);margin-bottom:18px
+    }
+    .role{font-size:12px;letter-spacing:2px;color:var(--accent);font-weight:800}
+    .contact{text-align:center}
+    footer{border-top:1px solid var(--line);padding:30px 6%;text-align:center;color:var(--muted)}
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    .reveal.show{opacity:1;transform:none}
+    @media(max-width:800px){
+      .menu{display:block}.links{
+        display:none;position:absolute;top:74px;left:0;width:100%;
+        flex-direction:column;padding:25px;background:rgba(4,7,15,.96)
+      }
+      .links.open{display:flex}
+      .grid,.pastors{grid-template-columns:1fr}
+      .brand span{font-size:14px}
+      section{padding:75px 5%}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#home" class="brand">
+    <img src="logo.png" alt="Newlife Prayer Church logo">
+    <span>Newlife Prayer Church</span>
+  </a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <div class="links">
+    <a href="#home">Welcome</a>
+    <a href="#services">Services</a>
+    <a href="#giving">Giving</a>
+    <a href="#pastors">Pastors</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-content reveal">
+    <img src="logo.png" class="hero-logo" alt="Newlife Prayer Church Bwebajja logo">
+    <p class="gold"><strong>NEWLIFE PRAYER CHURCH BWEBAJJA</strong></p>
+    <h1>A place of <span class="gold">prayer, faith, hope</span>, and transformation.</h1>
+    <p class="tagline">Welcome to Newlife Prayer Church Bwebajja. Join us as we grow together in faith.</p>
+    <a class="btn" href="#services">View Services</a>
+    <a class="btn alt" href="tel:+256701393666">Call Us</a>
+  </div>
+</header>
+
+<section id="services">
+  <div class="reveal">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">Join us for worship, prayer and fellowship.</p>
+  </div>
+  <div class="grid">
+    <article class="card reveal">
+      <h3>Sunday Morning Service</h3>
+      <p class="time">10:00 AM – 11:00 AM</p>
+    </article>
+    <article class="card reveal">
+      <h3>Main Service</h3>
+      <p class="time">11:00 AM – 2:00 PM</p>
+    </article>
+  </div>
+</section>
+
+<section id="giving" class="giving">
+  <div class="card reveal">
+    <h2 class="section-title">Giving</h2>
+    <p class="section-sub">Your generosity helps support the church and its ministry.</p>
+    <div class="number" id="giveNumber">+256 701 393666</div><br>
+    <button class="btn" id="copyBtn">Copy Giving Number</button>
+    <p id="copyMessage" class="gold"></p>
+  </div>
+</section>
+
+<section id="pastors">
+  <div class="reveal">
+    <h2 class="section-title">Our Pastors</h2>
+    <p class="section-sub">Meet the pastors serving Newlife Prayer Church Bwebajja.</p>
+  </div>
+  <div class="grid pastors">
+    <article class="card pastor reveal">
+      <img src="emmanuel-matovu.jpg" alt="Pastor Emmanuel Matovu">
+      <h3>Pastor Emmanuel Matovu</h3>
+      <p class="role">LEAD PASTOR</p>
+    </article>
+    <article class="card pastor reveal">
+      <img src="gerald-sempijja.jpg" alt="Pastor Gerald Sempijja">
+      <h3>Pastor Gerald Sempijja</h3>
+    </article>
+    <article class="card pastor reveal">
+      <img src="abaho-simon.jpg" alt="Pastor Abaho Simon">
+      <h3>Pastor Abaho Simon</h3>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="card reveal">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-sub">We would love to hear from you.</p>
+    <a class="btn" href="tel:+256701393666">Call +256 701 393666</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Newlife Prayer Church Bwebajja. All rights reserved.
+</footer>
+
+<script>
+  const menu = document.querySelector('.menu');
+  const links = document.querySelector('.links');
+
+  menu.addEventListener('click', () => links.classList.toggle('open'));
+  document.querySelectorAll('.links a').forEach(link => {
+    link.addEventListener('click', () => links.classList.remove('open'));
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, {threshold: 0.12});
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.getElementById('copyBtn').addEventListener('click', async () => {
+    const number = document.getElementById('giveNumber').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(number);
+      document.getElementById('copyMessage').textContent = 'Number copied!';
+    } catch {
+      document.getElementById('copyMessage').textContent = number;
+    }
+  });
+</script>
+
+</body>
+</html>
